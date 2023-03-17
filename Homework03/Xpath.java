@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Xpath {
     public static void main(String[] args) {
@@ -16,9 +17,10 @@ public class Xpath {
     click on the button get total
     also please print the value of the attribute type of the button GET TOTAL*/
 
-        System.setProperty("webdriver.chrome.driver","driver/chromedriver");
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        WebDriver driver = new ChromeDriver(options);
 
 
         driver.get("http://practice.syntaxtechs.net/basic-first-form-demo.php");

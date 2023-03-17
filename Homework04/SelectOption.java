@@ -14,8 +14,7 @@ public class SelectOption {
        e.g option1 , option2 , option 3, option 4
     Note write down the logic in dynamic way
      i.e one change in if else condition can change ur selection */
-
-        System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
+        System.setProperty("webdriver.chrome.driver","driver/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("http://practice.syntaxtechs.net/basic-checkbox-demo.php");
