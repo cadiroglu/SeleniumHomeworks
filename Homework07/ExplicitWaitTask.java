@@ -39,7 +39,7 @@ public class ExplicitWaitTask {
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='checkbox']")));
         System.out.println("Click checkbox " + driver.findElement(By.xpath("//input[@type='checkbox']")));
 
-        driver.quit();
+        driver.close();
 
 
 
