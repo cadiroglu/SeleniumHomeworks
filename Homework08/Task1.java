@@ -33,6 +33,7 @@ public class Task1 {
              checkbox.click();
 
                System.out.println(checkbox.isSelected());
+               driver.quit();
 
 
 
